@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>DEMO 31</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script>
+        </script>
+    </head>
+    <body>
+        <pre>
+ // template literal
+ // back tick ``
+
+ const name = "klef";
+ document.writeln(`<b>Hi ${name} </b>`);
+
+ // spread operator
+
+ const a = [10,23,45,56];
+ const b = [...a,30,40];
+ document.writeln("a="+a+"  ");
+ document.writeln("b="+b+"  ");
+ 
+ const x = [12,13,45,57];
+ const y = [56,23,90,34];
+ const z = [...x,...y];
+ document.writeln("x="+x+"  ");
+ document.writeln("y="+y+"  ");
+ document.writeln("z="+z+"  ");
+
+const v1 = "kluniversity";
+const v2 = [...v1];
+document.writeln("v1="+v1+"  ");
+document.writeln("v2="+v2+"  ");
+
+ // destructuring assingment 
+
+ const names = ["10","mswd","sdp",20];
+ document.writeln("Names="+names+"  ");
+ document.writeln("Length="+names.length+" ");
+ const [i,j,k,l] = names;
+ document.writeln(i+"  ");
+ document.writeln(j+"  ");
+ document.writeln(k+"  ");
+ document.writeln(l+"  ");
+
+ const [p,q] = names;
+ document.writeln(p+"  ");
+ document.writeln(q+"  ");
+
+ const [m,,,n] = names
+ document.writeln(m+"  ");
+ document.writeln(n+"  ");
+
+        </pre>
+    </body>
+
+</html>

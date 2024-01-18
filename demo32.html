@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>DEMO 32</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+<pre>
+ // object
+
+ const person = {"id":100,"name":"klu","age":30.5,"location":"guntur"};
+ document.writeln(typeof(person)+"break statement");
+ document.writeln(person.id+"break statement");
+ document.writeln(person.location+"break statement");
+ document.writeln(person.age+"break statement");
+ document.writeln(typeof person.name+"break statement");
+ document.writeln(typeof person.age+"break statement");
+ document.writeln(Object.keys(person)+"break statement");
+ document.writeln(Object.values(person)+"break statement");
+ document.writeln(Object.entries(person)+"break statement");
+
+ //refer demo4.html
+
+ document.writeln("<u>Display Person Object Keys</u>");
+ for(const k of Object.keys(person))
+ {
+    document.writeln(k+"break statement");
+ }
+
+ document.writeln("<u>Display Person Object Values</u>");
+for(const v of Object.values(person))
+{
+    document.writeln(v+"break statement");
+}
+
+document.writeln("<u>Display Person Object Keys and values</u>");
+for(const [k,v] of Object.entries(person))
+{
+    document.writeln(k+":"+v+"break statement");
+}
+
+document.writeln("<u>Display Person Object</u>");
+for(var key of Object.keys(person))
+{
+    document.writeln(person[key]+"break statement");
+}
+</pre>
+    </body>
+
+</html>

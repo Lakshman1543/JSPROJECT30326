@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>DEMO 36</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+    <body>
+        <pre>
+    // parameterized constructor
+
+    class Product
+    {
+        constructor (id,catergory,name,cost)
+        {
+            this.pid = id;
+            this.pcategory = catergory;
+            this.pname = name;
+            this.pcost = cost;
+        }
+        display()
+        {
+            document.writeln("Product ID:"+this.pid+"break statement");
+            document.writeln("Product Category:"+this.pcategory+"break statement");
+            document.writeln("Product Name:"+this.pname+"break statement");
+            document.writeln("Product Cost:"+this.pcost+"break statement");
+        }
+    }
+
+    let p1 = new Product(101,"mobiles","iphone",56000.50); // s1 is an object of Product class
+    p1.display();
+
+    let p2 = new Product(102,"clothes","saree",2000.00);
+    p2.display();
+        </pre>
+    </body>
+
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>DEMO 16</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
+
+    <body>
+        <pre>
+         //Multiplication table
+         document.writeln("Printing Multiplication table in table");
+         let n = parseInt(prompt("Enter Value",1));
+         document.writeln("<h3 align='center'>Multiplication Table</h3>");
+         document.writeln("<table align='center' bgcolor=yellow>");
+         for(let i=1;i<=n;i++){
+            document.writeln("<tr align=center>");
+            document.writeln("<td>"+n+"</td>");
+            document.writeln("<td>*</td>");
+            document.writeln("<td>"+i+"</td>");
+            document.writeln("<td>=</td>");
+            document.writeln("<td>"+(n*i)+"</td>");
+            document.writeln("</tr>");
+         }
+        </pre>
+    </body>
+</html>

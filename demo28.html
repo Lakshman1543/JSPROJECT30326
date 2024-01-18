@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>DEMO 28</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script>
+        
+        </script>
+    </head>
+    <body>
+        <pre>
+        // map object - key value pair
+        
+        const demomap = new Map();
+
+        demomap.set("id",101);
+        demomap.set("name","mswd");
+        demomap.set("age",34.5);
+        demomap.set("status",true);
+        demomap.set("name","klef"); // duplicate key - mswd will be changed to klef
+        document.writeln("Map Size="+demomap.size+"  "); // 4
+        document.writeln("Map Type="+typeof demomap.size+" "); //number
+
+        document.writeln(demomap.get("id")+" "); // 101
+        document.writeln(demomap.get("city")+" "); //undefined
+
+
+        document.writeln(demomap.has("id")+" "); //true
+        document.writeln(demomap.has("city")+" "); // false
+        
+        document.writeln("Deletion:"+demomap.delete("status")+"  "); // deletion of status
+        document.writeln("Map Size="+demomap.size+" "); //3
+
+        document.writeln("<u>Display Map</u> "); // Message
+        for(const k of demomap.keys())
+        {
+            document.writeln(k);
+        }
+
+        document.writeln("break statement");
+
+        document.writeln("<u>Display Map Values</u> "); // Message
+
+        for(const v of demomap.values())
+        {
+            document.writeln(v);
+        }
+
+        document.writeln("break statement");
+
+        document.writeln("<u>Display Map Values based on keys</u>");
+        for(const key of demomap.keys())
+        {
+            document.writeln(demomap.get(key));
+        }
+
+        document.writeln("break statement");
+
+        document.writeln("<u>Display Map keys and values</u> ");
+
+        for(const[k,v] of demomap.entries())
+        {
+            document.writeln(k+":"+v);
+        }
+
+        document.writeln("break statement");
+        demomap.clear();
+        document.writeln("Map Size="+demomap.size+" ");
+        </pre>
+    </body>
+</html>

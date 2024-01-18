@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>DEMO 18</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+        </script>
+    </head>
+    <body>
+        <pre>
+        // Arrays
+        document.writeln("<u>Demo on Arrays</u> ");
+        const s = [34,67,89] //same type of elements
+        document.writeln(s+" ");
+        document.writeln(typeof(s)+"  ");
+        document.writeln(s.length+" ");
+        document.writeln(s[0]+" ");
+        document.writeln(s[2]+" ");
+        document.writeln(s[5]+" ");
+        document.writeln(typeof s[1]+" ");
+        s[1]=50;
+        s[2]="cse";
+        document.writeln(s+" ");
+        s.push("MSWD");
+        s.push(100);
+        document.writeln(s+" ");
+        document.writeln(s.length+" ");
+        s.pop();
+        document.writeln(s+" ");
+        document.writeln(s.length+" ");
+        document.writeln(s.reverse()+" ");
+        document.writeln(s.sort()+" ");
+        document.writeln("Array= "+s+" ");
+        let element = s.shift();
+        document.writeln(element+" ");
+        document.writeln("After Shifting= "+s+" ");
+        let len = s.unshift(100.5);
+        document.writeln(len+" ");
+        document.writeln("After Unshifting= "+s+" ");
+        let len1 = s.unshift("AWS",31,"PFSD");
+        document.writeln(len1+" ");
+        document.writeln("After Unshifting= "+s+"  ");
+        document.writeln("<u>Display the Array Using For Loop</u> ");
+        for(let i=0;i<s.length;i++){
+            document.writeln(s[i]+" ");
+        }
+        document.writeln("<u>Display the Array Using For in Loop</u>");
+        for(let i in s){
+            document.writeln(s[i]+" ");
+        }
+        document.writeln("<u>Display the Array Using For of Loop</u> ");
+        for(let element of s){
+            document.writeln(element+" ");
+        }
+        </pre>
+    </body>
+</html>
